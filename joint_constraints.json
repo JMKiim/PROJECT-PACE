@@ -1,0 +1,284 @@
+{
+  "motors": {
+    "HeadYaw": {
+      "type": "motor",
+      "name": "HeadYaw",
+      "min": -2.08567,
+      "max": 2.08567,
+      "maxVelocity": 8.26797
+    },
+    "HeadPitch": {
+      "type": "motor",
+      "name": "HeadPitch",
+      "min": -0.671952,
+      "max": 0.514872,
+      "maxVelocity": 7.19407
+    },
+    "RShoulderPitch": {
+      "type": "motor",
+      "name": "RShoulderPitch",
+      "min": -2.08567,
+      "max": 2.08567,
+      "maxVelocity": 8.26797
+    },
+    "RShoulderRoll": {
+      "type": "motor",
+      "name": "RShoulderRoll",
+      "min": -1.32645,
+      "max": 0.314159,
+      "maxVelocity": 7.19407
+    },
+    "RElbowYaw": {
+      "type": "motor",
+      "name": "RElbowYaw",
+      "min": -2.08567,
+      "max": 2.08567,
+      "maxVelocity": 8.26797
+    },
+    "RElbowRoll": {
+      "type": "motor",
+      "name": "RElbowRoll",
+      "min": 0.0,
+      "max": 1.54462,
+      "maxVelocity": 7.19407
+    },
+    "RWristYaw": {
+      "type": "motor",
+      "name": "RWristYaw",
+      "min": -1.82387,
+      "max": 1.82387,
+      "maxVelocity": 24.6229
+    },
+    "RPhalanx1": {
+      "type": "motor",
+      "name": "RPhalanx1",
+      "min": 0.0,
+      "max": 1.0,
+      "maxVelocity": 10.0
+    },
+    "RPhalanx2": {
+      "type": "motor",
+      "name": "RPhalanx2",
+      "min": 0.0,
+      "max": 1.0,
+      "maxVelocity": 10.0
+    },
+    "RPhalanx3": {
+      "type": "motor",
+      "name": "RPhalanx3",
+      "min": 0.0,
+      "max": 1.0,
+      "maxVelocity": 10.0
+    },
+    "RPhalanx4": {
+      "type": "motor",
+      "name": "RPhalanx4",
+      "min": 0.0,
+      "max": 1.0,
+      "maxVelocity": 10.0
+    },
+    "RPhalanx5": {
+      "type": "motor",
+      "name": "RPhalanx5",
+      "min": 0.0,
+      "max": 1.0,
+      "maxVelocity": 10.0
+    },
+    "RPhalanx6": {
+      "type": "motor",
+      "name": "RPhalanx6",
+      "min": 0.0,
+      "max": 1.0,
+      "maxVelocity": 10.0
+    },
+    "RPhalanx7": {
+      "type": "motor",
+      "name": "RPhalanx7",
+      "min": 0.0,
+      "max": 1.0,
+      "maxVelocity": 10.0
+    },
+    "RPhalanx8": {
+      "type": "motor",
+      "name": "RPhalanx8",
+      "min": 0.0,
+      "max": 1.0,
+      "maxVelocity": 10.0
+    },
+    "LShoulderPitch": {
+      "type": "motor",
+      "name": "LShoulderPitch",
+      "min": -2.08567,
+      "max": 2.08567,
+      "maxVelocity": 8.26797
+    },
+    "LShoulderRoll": {
+      "type": "motor",
+      "name": "LShoulderRoll",
+      "min": -0.314159,
+      "max": 1.32645,
+      "maxVelocity": 7.19407
+    },
+    "LElbowYaw": {
+      "type": "motor",
+      "name": "LElbowYaw",
+      "min": -2.08567,
+      "max": 2.08567,
+      "maxVelocity": 8.26797
+    },
+    "LElbowRoll": {
+      "type": "motor",
+      "name": "LElbowRoll",
+      "min": -1.54462,
+      "max": 0.0,
+      "maxVelocity": 7.19407
+    },
+    "LWristYaw": {
+      "type": "motor",
+      "name": "LWristYaw",
+      "min": -1.82387,
+      "max": 1.82387,
+      "maxVelocity": 24.6229
+    },
+    "LPhalanx1": {
+      "type": "motor",
+      "name": "LPhalanx1",
+      "min": 0.0,
+      "max": 1.0,
+      "maxVelocity": 10.0
+    },
+    "LPhalanx2": {
+      "type": "motor",
+      "name": "LPhalanx2",
+      "min": 0.0,
+      "max": 1.0,
+      "maxVelocity": 10.0
+    },
+    "LPhalanx3": {
+      "type": "motor",
+      "name": "LPhalanx3",
+      "min": 0.0,
+      "max": 1.0,
+      "maxVelocity": 10.0
+    },
+    "LPhalanx4": {
+      "type": "motor",
+      "name": "LPhalanx4",
+      "min": 0.0,
+      "max": 1.0,
+      "maxVelocity": 10.0
+    },
+    "LPhalanx5": {
+      "type": "motor",
+      "name": "LPhalanx5",
+      "min": 0.0,
+      "max": 1.0,
+      "maxVelocity": 10.0
+    },
+    "LPhalanx6": {
+      "type": "motor",
+      "name": "LPhalanx6",
+      "min": 0.0,
+      "max": 1.0,
+      "maxVelocity": 10.0
+    },
+    "LPhalanx7": {
+      "type": "motor",
+      "name": "LPhalanx7",
+      "min": 0.0,
+      "max": 1.0,
+      "maxVelocity": 10.0
+    },
+    "LPhalanx8": {
+      "type": "motor",
+      "name": "LPhalanx8",
+      "min": 0.0,
+      "max": 1.0,
+      "maxVelocity": 10.0
+    },
+    "RHipYawPitch": {
+      "type": "motor",
+      "name": "RHipYawPitch",
+      "min": -1.14529,
+      "max": 0.740718,
+      "maxVelocity": 4.16174
+    },
+    "RHipRoll": {
+      "type": "motor",
+      "name": "RHipRoll",
+      "min": -0.738274,
+      "max": 0.449597,
+      "maxVelocity": 4.16174
+    },
+    "RHipPitch": {
+      "type": "motor",
+      "name": "RHipPitch",
+      "min": -1.77378,
+      "max": 0.48398,
+      "maxVelocity": 6.40239
+    },
+    "RKneePitch": {
+      "type": "motor",
+      "name": "RKneePitch",
+      "min": -0.0923279,
+      "max": 2.11255,
+      "maxVelocity": 6.40239
+    },
+    "RAnklePitch": {
+      "type": "motor",
+      "name": "RAnklePitch",
+      "min": -1.1863,
+      "max": 0.932006,
+      "maxVelocity": 6.40239
+    },
+    "RAnkleRoll": {
+      "type": "motor",
+      "name": "RAnkleRoll",
+      "min": -0.768992,
+      "max": 0.397935,
+      "maxVelocity": 4.16174
+    },
+    "LHipYawPitch": {
+      "type": "motor",
+      "name": "LHipYawPitch",
+      "min": -1.14529,
+      "max": 0.740718,
+      "maxVelocity": 4.16174
+    },
+    "LHipRoll": {
+      "type": "motor",
+      "name": "LHipRoll",
+      "min": -0.379435,
+      "max": 0.79046,
+      "maxVelocity": 4.16174
+    },
+    "LHipPitch": {
+      "type": "motor",
+      "name": "LHipPitch",
+      "min": -1.77378,
+      "max": 0.48398,
+      "maxVelocity": 6.40239
+    },
+    "LKneePitch": {
+      "type": "motor",
+      "name": "LKneePitch",
+      "min": -0.0923279,
+      "max": 2.11255,
+      "maxVelocity": 6.40239
+    },
+    "LAnklePitch": {
+      "type": "motor",
+      "name": "LAnklePitch",
+      "min": -1.18944,
+      "max": 0.922581,
+      "maxVelocity": 6.40239
+    },
+    "LAnkleRoll": {
+      "type": "motor",
+      "name": "LAnkleRoll",
+      "min": -0.39788,
+      "max": 0.769001,
+      "maxVelocity": 4.16174
+    }
+  }
+}
