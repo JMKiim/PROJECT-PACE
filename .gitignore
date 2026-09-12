@@ -40,7 +40,6 @@ MANIFEST
 *.core
 *.wbt.bak
 motion_to_validate.json
-agent_fall_report.json
-motion_val_*.json
-report_val_*.json
+motion_validation_*.json
+fall_report_*.json
 README_CameraReady.md

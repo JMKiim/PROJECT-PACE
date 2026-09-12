@@ -1,6 +1,11 @@
-# Shared Constants and Dictionaries for the PACE Framework
+# Shared robot configuration for the released PACE components
 
-NEUTRAL_POSE = {
+# Robot-specific reference values used to interpret global-state measurements.
+# Replace None with values for the configured robot before constructing MEM prompts.
+ROBOT_HEIGHT_CM = None
+STANDING_COM_Z_CM = None
+
+STARTING_POSE = {
     "HeadYaw": 0.0, "HeadPitch": 0.0,
     "LShoulderPitch": 1.5708, "RShoulderPitch": 1.5708,
     "LShoulderRoll": 0.0,  "RShoulderRoll": 0.0,
@@ -114,5 +119,7 @@ JOINT_MEANINGS = {
     },
 }
 
-NEUTRAL_POSE_DESC = "An at-attention posture relative to the upper body's normal plane: the head faces forward, arms hang vertically downward, and elbows point backward. The normal vector from the palms is directed toward the torso or thighs. Hands are not opened."
-JOINT_MEANINGS_DESC = "States are determined based on each joint angle of the NEUTRAL_POSE. Actions refer to objective movements resulting from changes in joint angle values, regardless of the pose."
+STARTING_POSE_DESC = "A common upright starting pose with the head facing forward and the arms resting vertically at the sides."
+JOINT_MEANINGS_DESC = "Joint states are described relative to STARTING_POSE. Actions describe objective movements produced by changes in joint angles, independent of the target affect."
+
+
