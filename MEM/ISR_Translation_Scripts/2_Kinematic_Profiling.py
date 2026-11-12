@@ -236,6 +236,8 @@ def main():
     constraints_path = os.path.join(
         current_dir,
         "..",
+        "..",
+        "shared",
         "joint_constraints.json",
     )
     motion_path = os.path.join(

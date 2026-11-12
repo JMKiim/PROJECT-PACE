@@ -13,18 +13,18 @@ def _target_ranges(target_affect):
         return "4-6", "4-6"
 
     if "positive" in normalized:
-        valence_range = "7-9"
+        valence_range = "> 6"
     elif "negative" in normalized:
-        valence_range = "1-3"
+        valence_range = "< 4"
     else:
         raise ValueError(
             "Target affect must specify positive, negative, or neutral valence."
         )
 
     if "high" in normalized:
-        arousal_range = "7-9"
+        arousal_range = "> 6"
     elif "low" in normalized:
-        arousal_range = "1-3"
+        arousal_range = "< 4"
     else:
         raise ValueError(
             "A non-neutral target affect must specify high or low arousal."
@@ -36,9 +36,9 @@ def _target_ranges(target_affect):
 def _success_criteria(target_affect):
     valence_range, arousal_range = _target_ranges(target_affect)
     return f"""
-All three evaluator ensemble members must independently satisfy both criteria:
-- Valence rating: {valence_range}
-- Arousal rating: {arousal_range}
+The arithmetic mean of the three evaluator ratings must satisfy both criteria:
+- Mean valence rating: {valence_range}
+- Mean arousal rating: {arousal_range}
 Ratings use the 9-point Self-Assessment Manikin (SAM) scales.
 """.strip()
 
