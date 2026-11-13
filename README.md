@@ -1,7 +1,6 @@
 <div align="center">
   <h1>PACE</h1>
   <p><strong>Core Components for Affective Robot Motion</strong></p>
-  <p>Reference components supporting motion generation, kinematic validation, intermediate semantic representation, and automated affective evaluation.</p>
 </div>
 
 <p align="center">
@@ -47,11 +46,7 @@ The reference implementation was configured with:
 | **Physics simulator** | Webots R2025a |
 | **Robot platform** | NAO V6 humanoid robot |
 
-These entries document the reference configuration. API credentials and model-invocation code are not included in this repository.
-
 ## Motion Examples
-
-Representative motions are shown on a virtual NAO model and as frames from physical NAO execution.
 
 ### Virtual NAO model
 
@@ -115,15 +110,13 @@ The ISR conversion stages are:
 
 ## Configuration Before Use
 
-This repository contains reusable framework components rather than a one-command demonstration. Supply robot- and task-specific values before running validation or ISR translation:
+Configure the following robot- and task-specific values before running validation or ISR translation:
 
 - `shared/pace_config.py`: robot height, standing center-of-mass height, starting pose, and joint semantics.
 - `MGM/Kinematic_Validation.py`: joint-angle, angular-velocity, and zero-time tolerances.
 - `MEM/ISR_Translation_Scripts/1_Temporal_Segmentation.py`: movement threshold.
 - `MEM/ISR_Translation_Scripts/4_Global_State_Integration.py`: minimum interval and sensor-time tolerance.
 - Optional fall checking additionally requires a local Webots installation, world, and controller.
-
-Sample motion data, study-specific thresholds, and Webots assets are not bundled.
 
 ## Minimal Example
 
@@ -143,4 +136,4 @@ prompt = construct_generator_prompt(
 )
 ```
 
-The core Python modules use only the standard library. Webots is required only for optional physics-based fall checking.
+The core Python modules use only the Python standard library.
