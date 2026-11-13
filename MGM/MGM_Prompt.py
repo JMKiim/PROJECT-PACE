@@ -88,15 +88,13 @@ Joint angles are expressed in radians, and maximum angular velocities are expres
         prompt += f"""
 
 ### Refinement Input
-The previous motion passed kinematic validation but did not meet the target-affect success criterion.
+The previous motion passed kinematic validation and is provided for affective refinement.
 
 Previous motion:
 {previous_motion_json}
 
 Target-blind evaluator output:
 {feedback}
-
-The evaluator output may contain motion interpretations, valence and arousal ratings, rationales, and suggested improvements.
 
 ### Refinement Success Criterion
 {criteria}

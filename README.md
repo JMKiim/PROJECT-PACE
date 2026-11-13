@@ -29,7 +29,7 @@
 
 PACE organizes reusable components for generating, checking, interpreting, and evaluating affective humanoid robot motion. Within the framework, the Motion Generation Module (MGM) handles full-body keyframe motion prompts and kinematic validation. The Motion Evaluation Module (MEM) converts each kinematically valid joint-angle keyframe sequence into an intermediate semantic representation (ISR) and prepares it for affective evaluation.
 
-This repository provides the core prompt templates, kinematic-validation logic, shared robot configuration, and four-stage ISR conversion used by that framework. It exposes the reference building blocks; language-model calls, evaluator-ensemble aggregation, and iterative-refinement orchestration are not included.
+This repository provides the core prompt templates, kinematic-validation logic, shared robot configuration, four-stage ISR conversion, and iterative-refinement utilities for the framework.
 
 | Component | Role | Key files |
 | --- | --- | --- |
@@ -37,6 +37,7 @@ This repository provides the core prompt templates, kinematic-validation logic, 
 | **Kinematic Validation** | Checks joint-angle and angular-velocity violations, with optional fall checking in Webots | `MGM/Kinematic_Validation.py`, `shared/joint_constraints.json` |
 | **Intermediate Semantic Representation (ISR)** | Converts changes between consecutive keyframes into natural-language descriptions while preserving temporal order | `MEM/ISR_Translation_Scripts/` |
 | **Motion Evaluation Module (MEM)** | Constructs prompts for the pose interpreter, dynamics analyzer, and affective evaluator | `MEM/MEM_Prompt.py` |
+| **Iterative Refinement** | Averages the three valence and arousal scores, applies the affective success criterion, and prepares refinement input for MGM | `Iterative_Refinement.py` |
 
 ## Reference Setup
 
@@ -86,6 +87,7 @@ Representative motions are shown on a virtual NAO model and as frames from physi
 
 ```text
 .
+├── Iterative_Refinement.py
 ├── MGM/
 │   ├── MGM_Prompt.py
 │   └── Kinematic_Validation.py
