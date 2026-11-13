@@ -27,17 +27,15 @@
 
 ## Overview
 
-PACE organizes reusable components for generating, checking, interpreting, and evaluating affective humanoid robot motion. Within the framework, the Motion Generation Module (MGM) handles full-body keyframe motion prompts and kinematic validation. The Motion Evaluation Module (MEM) converts each kinematically valid joint-angle keyframe sequence into an intermediate semantic representation (ISR) and prepares it for affective evaluation.
+This repository provides the reference components used in the framework: prompt templates for MGM and MEM, kinematic-validation logic, shared robot configuration, four-stage ISR conversion, and utilities for three-evaluator score aggregation and MGM refinement input.
 
-This repository provides the core prompt templates, kinematic-validation logic, shared robot configuration, four-stage ISR conversion, and iterative-refinement utilities for the framework.
-
-| Component | Role | Key files |
+| Component | Included functionality | Key files |
 | --- | --- | --- |
-| **Motion Generation Module (MGM)** | Assembles prompts for zero-shot motion generation and feedback-guided motion revision for a target affect category | `MGM/MGM_Prompt.py` |
-| **Kinematic Validation** | Checks joint-angle and angular-velocity violations, with optional fall checking in Webots | `MGM/Kinematic_Validation.py`, `shared/joint_constraints.json` |
-| **Intermediate Semantic Representation (ISR)** | Converts changes between consecutive keyframes into natural-language descriptions while preserving temporal order | `MEM/ISR_Translation_Scripts/` |
-| **Motion Evaluation Module (MEM)** | Constructs prompts for the pose interpreter, dynamics analyzer, and affective evaluator | `MEM/MEM_Prompt.py` |
-| **Iterative Refinement** | Averages the three valence and arousal scores, applies the affective success criterion, and prepares refinement input for MGM | `Iterative_Refinement.py` |
+| **Motion Generation Module (MGM)** | Dynamic prompt assembly for initial motion generation and feedback-guided revision | `MGM/MGM_Prompt.py` |
+| **Kinematic Validation** | Joint-angle, angular-velocity, and optional physics-based fall checks | `MGM/Kinematic_Validation.py`, `shared/joint_constraints.json` |
+| **Intermediate Semantic Representation (ISR)** | Temporal segmentation, kinematic profiling, semantic mapping, and global state integration | `MEM/ISR_Translation_Scripts/` |
+| **Motion Evaluation Module (MEM)** | Prompt construction for pose interpretation, dynamics analysis, and affective evaluation | `MEM/MEM_Prompt.py` |
+| **Iterative Refinement** | Three-evaluator score aggregation, success-criterion assessment, and refinement-input preparation | `Iterative_Refinement.py` |
 
 ## Reference Setup
 
